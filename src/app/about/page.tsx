@@ -166,22 +166,8 @@ export default function About() {
               </motion.h2>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <motion.div 
-                  className="md:col-span-4"
-                  whileHover={{ scale: 1.02 }}
-                >
-                  <div className="relative aspect-square rounded-lg overflow-hidden border border-[#FF6B00]/20 group">
-                    <Image
-                      src="/images/AJ Image.png"
-                      alt="AJ - Founder of RocketScience"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  </div>
-                </motion.div>
-                <motion.div 
-                  className="md:col-span-8"
-                  initial={{ x: 100, opacity: 0 }}
+                  className="md:col-span-12"
+                  initial={{ x: 0, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.8 }}
                 >
@@ -201,8 +187,8 @@ export default function About() {
                         whileHover={{ x: 10 }}
                       >
                         <div>
-                          <p className="text-[#FF6B00] font-bold text-xl">AJ</p>
-                          <p className="text-gray-400">Founder & CEO</p>
+                          <p className="text-[#FF6B00] font-bold text-xl">Founder & CEO</p>
+                          <p className="text-gray-400">RocketScience Customs</p>
                         </div>
                       </motion.div>
                     </motion.div>
