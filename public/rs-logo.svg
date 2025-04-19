@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="120" viewBox="0 0 240 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text { font-family: Arial, sans-serif; font-weight: bold; }
+    .rocket { fill: #fd9547; }
+    .science { fill: white; }
+  </style>
+  <g transform="translate(20,65)">
+    <text class="text rocket" font-size="48">Rocket</text>
+    <text class="text science" x="130" font-size="48">Science</text>
+  </g>
+</svg> 

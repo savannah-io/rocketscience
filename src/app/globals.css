@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  /* Keep only the RocketScience text in Anta font */
+  .brand-text {
+    font-family: 'Anta', sans-serif;
+  }
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Default cursor for all elements */
+* {
+  cursor: url('/cursor/favicon-32x32.png') 0 0, auto;
+}
+
+/* Default cursor for clickable elements */
+button,
+a,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  cursor: url('/cursor/favicon-32x32.png') 0 0, pointer;
+}
+
+/* Cursor for text inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  cursor: text;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Prose Styles */
+.prose-orange {
+  --tw-prose-invert-headings: #fff;
+  --tw-prose-invert-body: #d1d5db;
+  --tw-prose-invert-links: #FF6B00;
+  --tw-prose-invert-bold: #fff;
+}
+
+.prose h3 {
+  color: #FF6B00;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.prose p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+} 
